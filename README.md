@@ -32,3 +32,15 @@ Parts used:
 - 1x 1x8 2.54mm Female Pin Header
 - 4x 6mm Push Buttons
 - Various resistors/capacitors/LEDs/switches
+
+# Improvements
+This project is complete, but if you make it you'll probably want to make some changes.
+- Power LED resistor should go to GND, not GND_SWITCHED. That way LED is off when switch is off.
+- Protoboards seem off-center? Probably not measured correctly.
+- Smaller inductor; current one is probably overkill.
+- Buck converter on right side of board, not left (or pico protoboard on right side) for easier wiring when prototyping.
+- Amp like [this one](https://www.adafruit.com/product/2130) for speaker works really well if you can fit it on the board.
+- 5V->3V3 stepdown might be a good idea if you don't want to be tied to the pico's power supply.
+- Better PCB labels/warnings against using 3V3 on SD card/etc.
+
+![Picture of protoboard](./photo.jpg)
